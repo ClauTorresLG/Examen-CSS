@@ -1,0 +1,13 @@
+body{
+  background-color: #02010a;
+}
+header{
+  background-color: #5b7989;
+  border-radius: 12px;
+  font-family: 'Dancing Script',cursive;
+  color: white;
+}
+h1{
+  text-align: left;
+  text-shadow: 0 4px 0 #02010a;
+}
