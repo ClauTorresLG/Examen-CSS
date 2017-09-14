@@ -1,13 +1,28 @@
 body{
   background-color: #02010a;
+  font-family: 'Dancing Script',cursive;
 }
 header{
+  padding: 20px;
   background-color: #5b7989;
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0;
   font-family: 'Dancing Script',cursive;
   color: white;
 }
 h1{
   text-align: left;
   text-shadow: 0 4px 0 #02010a;
+}
+.contenido{
+  display: flex;
+	flex-direction: column;
+}
+#imagencentral{
+  background-color: #82c3a6;
+}
+#imagensecundaria{
+  background-color: #d5c75f;
+}
+.contenido img{
+  border: 1px solid;
 }
