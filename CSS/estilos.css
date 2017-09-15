@@ -3,8 +3,13 @@
   src: url('DancingScript-Regular.otf');
 }
 body{
+  padding: 20px;
   background-color: #02010a;
   font-family: 'DancingScript',cursive;
+}
+.contenido img{
+ -webkit-filter: drop-shadow(2px 2px 2px #02010a);
+ filter: drop-shadow(2px 2px 2px #02010a);
 }
 header{
   padding: 20px;
@@ -13,9 +18,13 @@ header{
   font-family: 'DancingScript',cursive;
   color: white;
 }
-h1{
+header h1{
   text-align: left;
   text-shadow: 0 4px 0 #02010a;
+}
+header a{
+  color: white;
+  text-decoration: none;
 }
 .contenido{
   display: flex;
@@ -30,13 +39,31 @@ h1{
 #imagensecundaria img{
   border: 1px solid;
 }
-.contenido img{
- -webkit-filter: drop-shadow(2px 2px 2px #02010a);
- filter: drop-shadow(2px 2px 2px #02010a);
-}
 footer{
   background-color: #C6d5c5;
   border-radius: 0 0 10px 10px;
   font-family: 'DancingScript',cursive;
-  color: white;
+  color: black;
+  text-decoration: none;
+}
+.piedepagina{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.contacto{
+  width: 25%;
+}
+.termino{
+  width: 25%;
+}
+.redessociales{
+  width: 25%;
+}
+.derechos{
+  width: 25%;
+}
+footer a{
+  color: black;
+  text-decoration: none;
 }
