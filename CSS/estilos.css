@@ -23,6 +23,7 @@ header h1{
   text-shadow: 0 4px 0 #02010a;
 }
 header a{
+  font-size: 24px;
   color: white;
   text-decoration: none;
 }
@@ -33,11 +34,20 @@ header a{
 #imagencentral{
   background-color: #82c3a6;
 }
+#imagencentral img{
+  width: 100%;
+}
 #imagensecundaria{
   background-color: #d5c75f;
 }
 #imagensecundaria img{
+  width: 45%;
+  height: 45%;
   border: 1px solid;
+}
+#imagensecundaria figure{
+  display: flex;
+  flex-direction: row;
 }
 footer{
   background-color: #C6d5c5;
