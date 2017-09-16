@@ -16,19 +16,39 @@ body{
  filter: drop-shadow(2px 2px 2px #02010a);
 }
 header{
-  padding: 5%;
+  padding: 2%;
+  overflow: hidden;
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
   color: white;
 }
-header h1{
-  text-align: left;
-  text-shadow: 0 4px 0 #02010a;
+.wrapper{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
 }
-header a{
-  text-align: right;
+header h1{
+  float: left;
+  text-shadow: 0 4px 0 #02010a;
+  line-height: 30px;
+}
+@media (max-width:600px){
+  header h1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+header nav{
+  float: right;
+  line-height: 30px;
+}
+header nav a{
+  display:inline-block;
   color: white;
   text-decoration: none;
+  font-size: 20px;
+  padding-top: 25px;
 }
 #imagencentral{
   background-color: #82c3a6;
@@ -52,6 +72,7 @@ header a{
 @media (max-width:600px){
   #imagensecundaria figure {
     width: 150%;
+    margin: 35px;
     display: flex;
     flex-direction: column;
   }
@@ -65,14 +86,15 @@ footer{
 }
 .informacion{
   padding: 5%;
-  font-size: 12px;
+  font-size: 18px;
   display: flex;
   flex-direction: row;
 }
 @media (max-width:600px){
   .informacion{
     width: 100%;
-    padding: 20%;
+    padding: 10%;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
   }
@@ -81,7 +103,7 @@ footer{
   width: 25%;
 }
 .termino{
-  width: 25%;
+  width: 23%;
 }
 .redessociales{
   width: 25%;
