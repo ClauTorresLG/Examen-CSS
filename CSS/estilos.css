@@ -3,19 +3,22 @@
   src: url('DancingScript-Regular.otf');
 }
 body{
-  padding: 20px;
+  padding: 5%;
   background-color: #02010a;
   font-family: 'DancingScript',cursive;
+}
+.contenido{
+  display: flex;
+	flex-direction: column;
 }
 .contenido img{
  -webkit-filter: drop-shadow(2px 2px 2px #02010a);
  filter: drop-shadow(2px 2px 2px #02010a);
 }
 header{
-  padding: 20px;
+  padding: 5%;
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
-  font-family: 'DancingScript',cursive;
   color: white;
 }
 header h1{
@@ -23,13 +26,9 @@ header h1{
   text-shadow: 0 4px 0 #02010a;
 }
 header a{
-  font-size: 24px;
+  text-align: right;
   color: white;
   text-decoration: none;
-}
-.contenido{
-  display: flex;
-	flex-direction: column;
 }
 #imagencentral{
   background-color: #82c3a6;
@@ -41,6 +40,7 @@ header a{
   background-color: #d5c75f;
 }
 #imagensecundaria img{
+  margin: 2.5%;
   width: 45%;
   height: 45%;
   border: 1px solid;
@@ -49,6 +49,13 @@ header a{
   display: flex;
   flex-direction: row;
 }
+@media (max-width:600px){
+  #imagensecundaria figure {
+    width: 150%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 footer{
   background-color: #C6d5c5;
   border-radius: 0 0 10px 10px;
@@ -56,10 +63,19 @@ footer{
   color: black;
   text-decoration: none;
 }
-.piedepagina{
-  padding: 20px;
+.informacion{
+  padding: 5%;
+  font-size: 12px;
   display: flex;
   flex-direction: row;
+}
+@media (max-width:600px){
+  .informacion{
+    width: 100%;
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .contacto{
   width: 25%;
