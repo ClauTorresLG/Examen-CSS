@@ -11,23 +11,31 @@
       <div class="wrapper">
         <h1>Comenzando con la Fotografía</h1>
         <nav>
-          <a href="../index.html">Inicio</a>
+          <a href="index.html">Inicio</a>
           <a href="html/paisajes.html">Paisajes</a>
           <a href="html/retratos.html">Retratos</a>
         </nav>
       </div>
     </header>
     <div class="contenido">
-      <section id="imagencentral">
-        <figure>
-          <img src="media/volendam.JPG" alt="Inicio">
-        </figure>
-      </section>
-      <section id="imagensecundaria">
-        <figure>
-          <img src="media/amsterdam.JPG" alt="Paisaje"> </br>
-          <img src="media/bosnia.JPG" alt="Retratos">
-        </figure>
+      <section>
+        <article class="imagencentral">
+          <img src="media/volendam.jpg" alt="volendam">
+        </article>
+        <article class="imagensecundaria">
+          <section class="imagenizquierda">
+            <a class="link" href="html/paisajes.html">
+              <img src="media/amsterdam.jpg" alt="paisajes">
+            </a>
+            <ins><h2>Paisajes</h2></ins>
+          </section>
+          <section class="imagenderecha">
+            <a class="link" href="html/retratos.html">
+              <img src="media/bosnia.jpg" alt="paisajes">
+            </a>
+            <ins><h2>Retratos</h2></ins>
+          </section>
+        </article>
       </section>
     </div>
   </body>

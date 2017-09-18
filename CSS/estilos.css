@@ -3,7 +3,7 @@
   src: url('DancingScript-Regular.otf');
 }
 body{
-  padding: 5%;
+padding: 2%;
   background-color: #02010a;
   font-family: 'DancingScript',cursive;
 }
@@ -50,27 +50,28 @@ header nav a{
   font-size: 20px;
   padding-top: 25px;
 }
-#imagencentral{
+.imagencentral{
   background-color: #82c3a6;
 }
-#imagencentral img{
-  width: 100%;
+.imagencentral img{
+  padding: 5%;
+  width: 90%;
 }
-#imagensecundaria{
+.imagensecundaria{
   background-color: #d5c75f;
-}
-#imagensecundaria img{
-  margin: 2.5%;
-  width: 45%;
-  height: 45%;
-  border: 1px solid;
-}
-#imagensecundaria figure{
   display: flex;
   flex-direction: row;
 }
+.imagensecundaria img {
+  width: 80%;
+  border: 1px solid;
+  margin: 10%;
+}
+.imagensecundaria h2{
+  text-align: center;
+}
 @media (max-width:600px){
-  #imagensecundaria figure {
+  .imagensecundaria figure {
     width: 150%;
     margin: 35px;
     display: flex;
@@ -114,4 +115,23 @@ footer{
 footer a{
   color: black;
   text-decoration: none;
+}
+.contenido2{
+  background-color: #82c3a6;
+  display: flex;
+  flex-direction: row;
+}
+#imagenes img{
+  margin: 1%;
+  width: 30%;
+  height: 30%;
+  border: 1px solid;
+}
+@media (max-width:600px){
+  #imagenes img {
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+  }
 }
