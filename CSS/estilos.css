@@ -70,6 +70,15 @@ header nav a{
 .imagensecundaria h2{
   text-align: center;
 }
+.imagenizquierda img{
+  transition-duration: rotate;
+  transition-duration: 0.5s;
+}
+.imagenizquierda img:hover{
+  transform: rotate(10deg);
+  border: 2px;
+  filter: drop-shadow(2px 2px 2px #82c3a6);
+}
 @media (max-width:600px){
   .imagensecundaria {
     width: 100%;
