@@ -71,9 +71,8 @@ header nav a{
   text-align: center;
 }
 @media (max-width:600px){
-  .imagensecundaria figure {
-    width: 150%;
-    margin: 35px;
+  .imagensecundaria {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
