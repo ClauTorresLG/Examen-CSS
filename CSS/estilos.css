@@ -32,6 +32,9 @@ header h1{
   text-shadow: 0 4px 0 #02010a;
   line-height: 30px;
 }
+header a{
+  text-align: center;
+}
 @media (max-width:600px){
   header h1 {
     text-align: center;
@@ -44,15 +47,11 @@ header nav{
   line-height: 30px;
 }
 header nav a{
-  display:inline-block;
+  display: inline-block;
   color: white;
   text-decoration: none;
   font-size: 20px;
   padding-top: 25px;
-}
-@media (max-width:600px){
-  header nav a{
-    text-align: center;
 }
 .imagencentral{
   background-color: #82c3a6;
@@ -111,6 +110,10 @@ footer{
   padding: 5%;
   font-size: 18px;
 }
+.informacion a{
+  text-decoration: none;
+  color: black;
+}
 @media (max-width:600px){
   .informacion{
     width: 100%;
@@ -151,13 +154,13 @@ footer{
   border: 1px solid;
   margin: 3%;
 }
-#img1 img{
+#img1 {
   filter: blur(10px);
 }
-#img2 #img4 #img6 img{
+#img2, #img4, #img6 {
   filter: grayscale(100%);
 }
-#img3 img{
+#img3 {
   filter: sepia(90%);
 }
 @media (max-width:600px){
