@@ -71,11 +71,20 @@ header nav a{
   text-align: center;
 }
 .imagenizquierda img{
-  transition-duration: rotate;
+  transition-property: rotate;
   transition-duration: 0.5s;
 }
 .imagenizquierda img:hover{
   transform: rotate(10deg);
+  border: 2px;
+  filter: drop-shadow(2px 2px 2px #82c3a6);
+}
+.imagenderecha img{
+  transition-property: translate;
+  transition-duration: 1s;
+}
+.imagenderecha img:hover{
+  transform: translate(20px -5px);
   border: 2px;
   filter: drop-shadow(2px 2px 2px #82c3a6);
 }
@@ -143,3 +152,24 @@ footer a{
     flex-direction: column;
   }
 }
+@keyframes pag-animacion {
+	0%{
+		position: relative;
+	  margin-top: 150%;
+	}
+  60%{
+		position: relative;
+		margin-top: -5%;
+	}
+	100%{
+		position: relative;
+		margin-top: 0%;
+	}
+}
+body{
+	animation-name: pag-animacion;
+	animation-duration: 2s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
